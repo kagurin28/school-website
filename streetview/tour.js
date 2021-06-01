@@ -1,42 +1,42 @@
 data = `{   
     "default": {
-        "firstScene": "room1",
+        "firstScene": "test1",
         "sceneFadeDuration": 1000,
 		"autoLoad" : true
     },
 
     "scenes": {
-        "room1": {
+        "test1": {
             "hfov": 110,
-            "pitch": -3,
-            "yaw": 117,
+            "pitch": 0,
+            "yaw": 0,
             "type": "equirectangular",
-            "panorama": "./room1.jpg",
+            "panorama": "test1.jpg",
             "hotSpots": [
                 {
-                    "pitch": -2.1,
-                    "yaw": 132.9,
+                    "pitch": 0,
+                    "yaw": 0,
                     "type": "scene",
-                    "text": "Airport",
-                    "sceneId": "room2"
+                    "text": "test2",
+                    "sceneId": "test2"
                 }
             ]
         },
 
-        "room2": {
+        "test2": {
             "hfov": 110,
-            "yaw": 5,
+            "yaw": 0,
             "type": "equirectangular",
-            "panorama": "https://actualquak.github.io/nths-server/360_1.jpg",
+            "panorama": "test2.jpg",
             "hotSpots": [
                 {
-                    "pitch": -0.6,
-                    "yaw": 37.1,
+                    "pitch": 0,
+                    "yaw": 0,
                     "type": "scene",
-                    "text": "Room",
-                    "sceneId": "room1",
-                    "targetYaw": -23,
-                    "targetPitch": 2
+                    "text": "test1",
+                    "sceneId": "test1",
+                    "targetYaw": 0,
+                    "targetPitch": 0
                 }
             ]
         }
