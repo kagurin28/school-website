@@ -11,7 +11,7 @@ data = `{
             "pitch": -3,
             "yaw": 117,
             "type": "equirectangular",
-            "panorama": "https://actualquak.github.io/nths-server/room1.jpg",
+            "panorama": "./room1.jpg",
             "hotSpots": [
                 {
                     "pitch": -2.1,
