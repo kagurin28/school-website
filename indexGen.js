@@ -1,6 +1,25 @@
-function generate(source) {
-	var content = document.getElementById("content");
-	content.innerHTML = source;
+function UrlExists(url) {
+	if ($.get(url) != undefined) {
+		return true;
+	} else {
+		return false;
+	}
 }
 
-generate("content.txt")
+function setSkel() {
+	skel = $.get("skeleton.html");
+	$("html").html(skel.responseText);
+}
+
+function generate() {
+	var pageData = $.get("./page.json");
+	
+	$("title").html = pageData.title;
+	$("#content").html = pageData.content;
+}
+
+function run() {
+	setSkel();
+	generate();
+	console.log("Hello world!");
+}
