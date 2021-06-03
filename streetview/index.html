@@ -1,28 +1,42 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en-US">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tour</title>
+    <title>NTHS Streetview</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
 	<script type="text/javascript" src="tour.js"></script>
-    <style>
-		body {
-			margin: 0;
-		}
-		
+	<link rel="stylesheet" href="../main.css">
+	<style>
 		#panorama {
-			width: 100vw;
-			height: 100vh;
+			width: 100%;
+			height: 500px;
+			display: inline-block;
 		}
-    </style>
+	</style>
 </head>
 <body>
-	<div id="panorama"></div>
-	<script>
-		console.log(data)
-		pannellum.viewer('panorama', JSON.parse(data));
-	</script>
+	<div class="page">
+		<div class="navbar">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/TuxFlat.svg/149px-TuxFlat.svg.png"></img>
+			<a href="./streetview">Street View</a>
+			<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Bonus Content</a>
+			<div class="dropdown">
+				<button href="javascript:void(0);" class="dropbtn">About&#9660;</button>
+				<div class="dropCnt">
+					<a href="javascript:void(0);">Eshays</a>
+					<a href="javascript:void(0);">Classes</a>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div id="panorama"></div>
+			<script>
+				console.log(data)
+				pannellum.viewer('panorama', JSON.parse(data));
+			</script>
+		</div>
+	</div>
 </body>
 </html>
