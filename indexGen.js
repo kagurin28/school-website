@@ -20,6 +20,7 @@ function generate() {
 
 function run() {
 	setSkel();
+	$("html").html(skel.responseText);
 	generate();
 	console.log("Hello world!");
 }
