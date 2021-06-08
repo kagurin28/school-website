@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	background-color: #dddddd
+	background-color: #eeeeee;
 }
 
 * {
@@ -12,11 +12,13 @@ body {
 	max-width: 60em;
 	margin: 0 auto;
 	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+	background-color: #ffffff;
 }
 
 /* NAVBAR SHIT */
 	/* Navbar container */
 	.navbar {
+		display: flex;
 		overflow: hidden;
 		background-color: cyan;
 		font-family: Arial;
@@ -24,7 +26,7 @@ body {
 	}
 
 	/* Links inside the navbar */
-	.navbar a {
+	.navbar a:not(.logo-container) {
 		float: left;
 		font-size: 16px;
 		text-align: center;
@@ -33,8 +35,13 @@ body {
 		color: black;
 		left: 50vw;
 	}
-	.navbar img {
-		height: 40px;
+	
+	.logo-container {
+		height: 48.4px;
+	}
+	.logo {
+		padding: 4px;
+		height: 40.4px;
 	}
 
 	/* The dropdown container */
