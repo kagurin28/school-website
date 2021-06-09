@@ -1,44 +1,57 @@
 data = `{   
     "default": {
-        "firstScene": "test1",
+        "firstScene": "Up-NE",
         "sceneFadeDuration": 1000,
 		"autoLoad" : true
     },
 
     "scenes": {
-        "test1": {
-            "hfov": 110,
-            "pitch": 0,
-            "yaw": 0,
+        "Up-NE": {
             "type": "equirectangular",
-            "panorama": "test1.jpg",
+            "panorama": "images/Up-NE.jpg",
+			
+			"yaw": -50,
+			"pitch": -10,
             "hotSpots": [
                 {
-                    "pitch": 0,
-                    "yaw": 0,
+                    "pitch": -5,
+                    "yaw": -47.5,
                     "type": "scene",
-                    "text": "test2",
-                    "sceneId": "test2"
+                    "sceneId": "Up-NCenE"
                 }
             ]
         },
 
-        "test2": {
-            "hfov": 110,
-            "yaw": 0,
+        "Up-NCenE": {
             "type": "equirectangular",
-            "panorama": "test2.jpg",
+            "panorama": "images/Up-NCenE.jpg",
             "hotSpots": [
                 {
-                    "pitch": 0,
-                    "yaw": 0,
+                    "pitch": -9,
+                    "yaw": 177,
                     "type": "scene",
-                    "text": "test1",
-                    "sceneId": "test1",
-                    "targetYaw": 0,
-                    "targetPitch": 0
-                }
+                    "sceneId": "Up-NE"
+                },
+				{
+					"pitch": 2,
+					"yaw": -3.5,
+					"type": "scene",
+					"sceneId": "Up-NCenW"
+				}
             ]
-        }
+        },
+		
+		"Up-NCenW": {
+			"type": "equirectangular",
+			"panorama": "images/Up-NCenW.jpg",
+			"hotSpots": [
+				{
+					"yaw": 172.5,
+					"pitch": -6,
+					"type": "scene",
+					"sceneId": "Up-NCenE"
+				}
+			]
+		}
     }
 }`;
