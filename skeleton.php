@@ -1,11 +1,16 @@
+<?php
+	session_start();
+?>
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>New Town High</title>
 	<link rel="icon" type="image/png" href="/icon.png">
 	<link rel="stylesheet" href="/main.css"></link>
+	<?php
+		include($_SESSION["headPath"]);
+	?>
 </head>
 <body>
 	<div class="page">
@@ -27,11 +32,9 @@
 		</div>
 		<div class="content">
 			<?php
-				$dir = $_SERVER["DOCUMENT_ROOT"];
-				
-				$content = fopen($dir . "/content.html", "r");
-				echo fread($content, filesize($dir . "/content.html"));
-				fclose($content);
+				include($_SESSION["cntPath"]);
+				session_unset();
+				session_destroy();
 			?>
 		</div>
 	</div>
