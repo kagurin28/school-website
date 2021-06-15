@@ -1,23 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NTHS Streetview</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/png" href="/icon.png">
-	<link rel="stylesheet" href="/main.css">
-	
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
-	<script type="text/javascript" src="tour.js"></script>
-
-	<style>
-		#panorama {
-			width: 100%;
-			height: 500px;
-			display: inline-block;
-		}
-	</style>
+	<link rel="stylesheet" href="/main.css"></link>
+	<?php
+		include($_SESSION["headPath"]);
+	?>
 </head>
 <body>
 	<div class="page">
@@ -38,11 +28,11 @@
 			</div>
 		</div>
 		<div class="content">
-			<div id="panorama"></div>
-			<script>
-				console.log(data)
-				pannellum.viewer("panorama", JSON.parse(data));
-			</script>
+			<?php
+				include($_SESSION["cntPath"]);
+				session_unset();
+				session_destroy();
+			?>
 		</div>
 	</div>
 </body>
