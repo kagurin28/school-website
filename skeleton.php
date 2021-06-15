@@ -19,7 +19,7 @@
 			<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Bonus Content</a>
 			<div class="dropdown">
 				<div class="dropbtn"> <!-- I have to have a div here because CSS -->
-					<a href="javascript:void(0);">About&#9660;</a>
+					<a href="/about">About&#9660;</a>
 				</div>
 				<div class="dropCnt">
 					<a href="javascript:void(0);">Eshays</a>
