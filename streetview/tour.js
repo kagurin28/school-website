@@ -8,7 +8,7 @@ data = `{
     "scenes": {
         "Up-NE": {
             "type": "equirectangular",
-            "panorama": "images/Up-NE.jpg",
+            "panorama": "/streetview/images/Up-NE.jpg",
 			
 			"yaw": -50,
 			"pitch": -10,
@@ -24,7 +24,7 @@ data = `{
 
         "Up-NCenE": {
             "type": "equirectangular",
-            "panorama": "images/Up-NCenE.jpg",
+            "panorama": "/streetview/images/Up-NCenE.jpg",
             "hotSpots": [
                 {
                     "pitch": -9,
@@ -43,7 +43,7 @@ data = `{
 		
 		"Up-NCenW": {
 			"type": "equirectangular",
-			"panorama": "images/Up-NCenW.jpg",
+			"panorama": "/streetview/images/Up-NCenW.jpg",
 			"hotSpots": [
 				{
 					"yaw": 172.5,
