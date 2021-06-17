@@ -1,4 +1,4 @@
-panoramas = `{
+{
 	"default": {
 		"firstScene": "Up-NE",
 		"sceneFadeDuration": 1000,
@@ -30,7 +30,8 @@ panoramas = `{
 					"pitch": -9,
 					"yaw": 177,
 					"type": "scene",
-					"sceneId": "Up-NE"
+					"sceneId": "",
+					"clickHandlerFunction": loadUp-NE_B
 				},
 				{
 					"pitch": 2,
@@ -54,4 +55,4 @@ panoramas = `{
 			]
 		}
 	}
-}`
+}
