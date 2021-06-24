@@ -18,7 +18,7 @@ const panoramas = {
 					"yaw": -47.5,
 					"type": "scene",
 					"sceneId": "",
-					"clickHandlerFunc": loadUp_NE1()
+					"clickHandlerFunc": function() {viewer.loadScene("Up-NCenE", 0, 0);}
 				}
 			]
 		},
@@ -31,13 +31,15 @@ const panoramas = {
 					"pitch": -9,
 					"yaw": 177,
 					"type": "scene",
-					"sceneId": "Up-NE"
+					"sceneId": "",
+					"clickHandlerFunc": function() {viewer.loadScene("Up-NE", -10, 130);}
 				},
 				{
 					"pitch": 2,
 					"yaw": -3.5,
 					"type": "scene",
-					"sceneId": "Up-NCenW"
+					"sceneId": "",
+					"clickHandlerFunc": function() {viewer.loadScene("Up-NCenW", 0, -5);}
 				}
 			]
 		},
@@ -50,7 +52,35 @@ const panoramas = {
 					"yaw": 172.5,
 					"pitch": -6,
 					"type": "scene",
-					"sceneId": "Up-NCenE"
+					"sceneId": "",
+					"clickHandlerFunc": function() {viewer.loadScene("Up-NCenE", -10, 180);}
+				}
+				{
+					"yaw": 0,
+					"pitch": -6,
+					"type": "scene",
+					"sceneId": "",
+					"clickHandlerFunc": function() {viewer.loadScene("Up-NW", 0, 0);}
+				}
+			]
+		}
+		"Up-NCenW": {
+			"type": "equirectangular",
+			"panorama": "/streetview/images/Up-NCenW.jpg",
+			"hotSpots": [
+				{
+					"yaw": 172.5,
+					"pitch": -6,
+					"type": "scene",
+					"sceneId": "",
+					"clickHandlerFunc": function() {viewer.loadScene("Up-NCenE", -10, 180);}
+				}
+				{
+					"yaw": 0,
+					"pitch": -6,
+					"type": "scene",
+					"sceneId": "",
+					"clickHandlerFunc": function() {viewer.loadScene("Up-NW", 0, 0);}
 				}
 			]
 		}

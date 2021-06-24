@@ -2,17 +2,7 @@
 <script>
 	var viewer;
 </script>
-<script>
-	function loadUp_NE0() {
-		console.log("Shit executed");
-		pannellum.loadScene("Up-NE", -5, -47.5);
-	}
-	function loadUp_NE1() {
-		console.log("Shit executed");
-		viewer.loadScene("Up-NE", 5, 47.5);
-	};
-</script>
 <script src="/streetview/config.js"></script>
 <script>
-	viewer = pannellum.viewer("panorama", panoramas)
-</script>
+	viewer = pannellum.viewer("panorama", panoramas);
+</script> <!-- Yes I know this is very spaghetti, but it works -->
