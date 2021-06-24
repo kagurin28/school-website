@@ -1,6 +1,8 @@
 <div id="panorama"></div>
-	<script>
-		console.log(panoramas);
-		pannellum.viewer("panorama", JSON.parse(panoramas));
-	</script>
-</div>
+<script>
+	var viewer;
+</script>
+<script src="/streetview/config.js"></script>
+<script>
+	viewer = pannellum.viewer("panorama", panoramas);
+</script> <!-- Yes I know this is very spaghetti, but it works -->
