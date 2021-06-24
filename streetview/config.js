@@ -17,8 +17,10 @@ const panoramas = {
 					"pitch": -5,
 					"yaw": -47.5,
 					"type": "scene",
-					"sceneId": "",
-					"clickHandlerFunc": function() {viewer.loadScene("Up-NCenE", 0, 0);}
+					
+					"targetYaw": 0,
+					"targetPitch": 0,
+					"sceneId": "Up-NCenE"
 				}
 			]
 		},
@@ -31,15 +33,20 @@ const panoramas = {
 					"pitch": -9,
 					"yaw": 177,
 					"type": "scene",
-					"sceneId": "",
-					"clickHandlerFunc": function() {viewer.loadScene("Up-NE", -10, 130);}
+					
+					"targetYaw": 130,
+					"targetPitch": -10,
+					"sceneId": "Up-NE"
 				},
 				{
 					"pitch": 2,
 					"yaw": -3.5,
 					"type": "scene",
 					"sceneId": "",
-					"clickHandlerFunc": function() {viewer.loadScene("Up-NCenW", 0, -5);}
+					
+					"targetYaw": -5,
+					"targetPitch": 0,
+					"sceneId": "Up-NCenW"
 				}
 			]
 		},
@@ -53,37 +60,64 @@ const panoramas = {
 					"pitch": -6,
 					"type": "scene",
 					"sceneId": "",
-					"clickHandlerFunc": function() {viewer.loadScene("Up-NCenE", -10, 180);}
-				}
+					
+					"targetYaw": 180,
+					"targetPitch": -10,
+					"sceneId": "Up-NCenE"
+				},
 				{
-					"yaw": 0,
-					"pitch": -6,
+					"yaw": -6.5,
+					"pitch": -1.5,
 					"type": "scene",
 					"sceneId": "",
-					"clickHandlerFunc": function() {viewer.loadScene("Up-NW", 0, 0);}
+					
+					"targetYaw": 0,
+					"targetPitch": 0,
+					"sceneId": "Up-NW"
 				}
 			]
-		}
-		"Up-NCenW": {
+		},
+		
+		"Up-NW": {
 			"type": "equirectangular",
-			"panorama": "/streetview/images/Up-NCenW.jpg",
+			"panorama": "/streetview/images/Up-NW.jpg",
 			"hotSpots": [
 				{
-					"yaw": 172.5,
-					"pitch": -6,
+					"yaw": 180,
+					"pitch": -10,
 					"type": "scene",
-					"sceneId": "",
-					"clickHandlerFunc": function() {viewer.loadScene("Up-NCenE", -10, 180);}
-				}
+					
+					"targetYaw": 173,
+					"targetPitch": -10,
+					"sceneId": "Up-NCenE"
+				},
 				{
 					"yaw": 0,
-					"pitch": -6,
+					"pitch": -10,
 					"type": "scene",
-					"sceneId": "",
-					"clickHandlerFunc": function() {viewer.loadScene("Up-NW", 0, 0);}
+					
+					"targetYaw": 0,
+					"targetPitch": -10,
+					"sceneId": "Up-Foyer"
 				}
 			]
-		}
+		},
+		
+		"Up-Foyer": {
+			"type": "equirectangular",
+			"panorama": "/streetview/images/Up-Foyer.jpg",
+			"hotSpots": [
+				{
+					"yaw": 180,
+					"pitch": -10,
+					"type": "scene",
+					
+					"targetYaw": 173,
+					"targetPitch": -10,
+					"sceneId": "Up-NW"
+				}
+			]
+		},
 	}
 };	// Yes this is a very crappy way to do it but I've put
 	// too many hours into fixing this ultimately
