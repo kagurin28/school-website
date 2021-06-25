@@ -38,8 +38,8 @@ const panoramas = {
 					"yaw": 41,
 					"type": "scene",
 					
-					"targetYaw": 90,
-					"targetPitch": -15,
+					"targetYaw": 121,
+					"targetPitch": -7.5,
 					"sceneId": "Mid-NE"
 				}
 			]
@@ -179,8 +179,8 @@ const panoramas = {
 					"pitch": -10,
 					"type": "scene",
 					
-					"targetYaw": -111,
-					"targetPitch": -5,
+					"targetYaw": -180,
+					"targetPitch": 2.5,
 					"sceneId": "Mid-SE"
 				},
 				{ // Stanley waves to the camera
@@ -293,6 +293,7 @@ const panoramas = {
 			]
 		},
 		
+		
 		"Mid-NE": {
 			"type": "equirectangular",
 			"panorama": "/streetview/images/Mid-NE.jpg",
@@ -305,6 +306,21 @@ const panoramas = {
 					"targetYaw": -136.5,
 					"targetPitch": 0,
 					"sceneId": "Up-NE"
+				},
+				{ // Down-NE
+					"yaw": -55,
+					"pitch": -32,
+					"type": "scene",
+					
+					"targetYaw": 126,
+					"targetPitch": 8.5,
+					"sceneId": "Down-NE"
+				},
+				{ // Window info
+					"yaw": 77.5,
+					"pitch": -8.5,
+					"type": "info",
+					"text": "These windows have been broken an (un)suprising amount of times"
 				}
 			]
 		},
@@ -337,6 +353,15 @@ const panoramas = {
 					"targetYaw": 50,
 					"targetPitch": -10,
 					"sceneId": "Up-SE"
+				},
+				{ // Down-SE
+					"yaw": 346.5,
+					"pitch": -32,
+					"type": "scene",
+					
+					"targetYaw": 303.5,
+					"targetPitch": -6.5,
+					"sceneId": "Down-SE"
 				}
 			]
 		},
@@ -366,6 +391,117 @@ const panoramas = {
 			]
 		},
 		
+		
+		"Down-NE": {
+			"type": "equirectangular",
+			"panorama": "/streetview/images/Down-NE.jpg",
+			"hotSpots": [
+				{ // Down-CenE
+					"yaw": 124.5,
+					"pitch": -2,
+					"type": "scene",
+					
+					"targetYaw": 117,
+					"targetPitch": 6.5,
+					"sceneId": "Down-CenE"
+				},
+				{ // Mid-NE
+					"yaw": 308,
+					"pitch": -1.5,
+					"type": "scene",
+					
+					"targetYaw": -222,
+					"targetPitch": 0,
+					"sceneId": "Mid-NE"
+				}
+			]
+		},
+		
+		"Down-CenE": {
+			"type": "equirectangular",
+			"panorama": "/streetview/images/Down-CenE.jpg",
+			"hotSpots": [
+				{ // Down-NE
+					"yaw": 294,
+					"pitch": -20.5,
+					"type": "scene",
+					
+					"targetYaw": -53,
+					"targetPitch": -18,
+					"sceneId": "Down-NE"
+				},
+				{ // Down-SE
+					"yaw": 117.5,
+					"pitch": 5,
+					"type": "scene",
+					
+					"targetYaw": 126,
+					"targetPitch": 1.5,
+					"sceneId": "Down-SE"
+				},
+				{ // Down-QuadNE
+					"yaw": 200,
+					"pitch": 7,
+					"type": "scene",
+					
+					"targetYaw": -201.5,
+					"targetPitch": 8.5,
+					"sceneId": "Down-QuadNE"
+				},
+				{ // Mid-NE
+					"yaw": 296.5,
+					"pitch": -5,
+					"type": "scene",
+					
+					"targetYaw": -222,
+					"targetPitch": 0,
+					"sceneId": "Mid-NE"
+				}
+			]
+		},
+		
+		"Down-NW": {
+			"type": "equirectangular",
+			"panorama": "/streetview/images/Down-NW.jpg",
+			"hotSpots": [
+				
+			]
+		},
+		
+		"Down-SE": {
+			"type": "equirectangular",
+			"panorama": "/streetview/images/Down-SE.jpg",
+			"hotSpots": [
+				{ // Down-CenE
+					"yaw": 303,
+					"pitch": -9.5,
+					"type": "scene",
+					
+					"targetYaw": 295,
+					"targetPitch": -15,
+					"sceneId": "Down-CenE"
+				},
+				{ // Down-QuadSE
+					"yaw": -130.5,
+					"pitch": -1.5,
+					"type": "scene",
+					
+					"targetYaw": -163,
+					"targetPitch": 5.5,
+					"sceneId": "Down-QuadSE"
+				},
+				{ // Mid-SE
+					"yaw": 126,
+					"pitch": 12,
+					"type": "scene",
+					
+					"targetYaw": 163,
+					"targetPitch": 1.5,
+					"sceneId": "Mid-SE"
+				}
+			]
+		},
+		
 		"Down-SW": {
 			"type": "equirectangular",
 			"panorama": "/streetview/images/Down-SW.jpg",
@@ -386,6 +522,105 @@ const panoramas = {
 					"type": "info",
 					"text": "This computer lab is fairly good, 8GB if I remember"
 				}
+			]
+		},
+		
+		"Down-QuadNE": {
+			"type": "equirectangular",
+			"panorama": "/streetview/images/Down-QuadNE.jpg",
+			"hotSpots": [
+				{ // Down-CenE
+					"yaw": -16,
+					"pitch": -19,
+					"type": "scene",
+					
+					"targetYaw": 15.5,
+					"targetPitch": -22.5,
+					"sceneId": "Down-CenE"
+				},
+				{ // Down-QuadCen
+					"yaw": -210.5,
+					"pitch": 7,
+					"type": "scene",
+					
+					"targetYaw": -217.5,
+					"targetPitch": 6.5,
+					"sceneId": "Down-QuadCen"
+				}
+			]
+		},
+		
+		"Down-QuadNW": {
+			"type": "equirectangular",
+			"panorama": "/streetview/images/Down-QuadNW.jpg",
+			"hotSpots": [
+				
+			]
+		},
+		
+		"Down-QuadSE": {
+			"type": "equirectangular",
+			"panorama": "/streetview/images/Down-QuadSE.jpg",
+			"hotSpots": [
+				{ // Down-SE
+					"yaw": 6,
+					"pitch": -13.5,
+					"type": "scene",
+					
+					"targetYaw": 45,
+					"targetPitch": -12,
+					"sceneId": "Down-SE"
+				},
+				{ // Down-QuadCen
+					"yaw": -162,
+					"pitch": 2.5,
+					"type": "scene",
+					
+					"targetYaw": -143.5,
+					"targetPitch": 7,
+					"sceneId": "Down-QuadCen"
+				}
+			]
+		},
+		
+		"Down-QuadSW": {
+			"type": "equirectangular",
+			"panorama": "/streetview/images/Down-QuadSW.jpg",
+			"hotSpots": [
+				
+			]
+		},
+		
+		"Down-QuadCen": {
+			"type": "equirectangular",
+			"panorama": "/streetview/images/Down-QuadCen.jpg",
+			"hotSpots": [
+				{ // Down-QuadNE
+					"yaw": -30,
+					"pitch": -14.5,
+					"type": "scene",
+					
+					"targetYaw": -32.5,
+					"targetPitch": -11,
+					"sceneId": "Down-QuadNE"
+				},
+				{ // Down-QuadSE
+					"yaw": 15.5,
+					"pitch": -16.5,
+					"type": "scene",
+					
+					"targetYaw": 7,
+					"targetPitch": -10,
+					"sceneId": "Down-QuadSE"
+				}
+			]
+		},
+		
+		"Down-Foyer": {
+			"type": "equirectangular",
+			"panorama": "/streetview/images/Down-Foyer.jpg",
+			"hotSpots": [
+				
 			]
 		}
 	}
