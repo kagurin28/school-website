@@ -5,4 +5,17 @@
 <script src="/streetview/config.js"></script>
 <script>
 	viewer = pannellum.viewer("panorama", panoramas);
-</script> <!-- Yes I know this is very spaghetti, but it works -->
+</script>
+<!-- Yes I know this is very spaghetti, but it works -->
+
+<a id="mapBtn" href="javascript:void(0);" onclick="hideMap()">Hide Map</a>
+<div id="map" class="mapContainer">
+	<img src="/streetview/map_top.jpg" width="100%"></img>
+	<div class="mapIcons">
+		<svg height="100%" width="100%" viewBox="0 0 250 250">
+			<circle id="MkUp-NE" cx="334" cy="45" r="3" stroke="black" stroke-width="1" fill="grey"></circle>
+			<circle id="MkUp-NCenE"	cx="264" cy="45" r="3" stroke="black" stroke-width="1" fill="grey"></circle>
+		</svg>
+	</div>
+</div>
+<script src="/streetview/map.js"></script>
