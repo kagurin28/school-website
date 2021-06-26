@@ -144,8 +144,8 @@ const panoramas = {
 					"pitch": -27.5,
 					"type": "scene",
 					
-					"targetYaw": 89,
-					"targetPitch": -20,
+					"targetYaw": 167.5,
+					"targetPitch": -14.5,
 					"sceneId": "Mid-NW"
 				}
 			]
@@ -236,8 +236,8 @@ const panoramas = {
 					"type": "scene",
 					"text": "People call this the \"iron stairwell\", for obvious reasons",
 					
-					"targetYaw": -135,
-					"targetPitch": -10,
+					"targetYaw": -208,
+					"targetPitch": -26,
 					"sceneId": "Mid-SW"
 				},
 				{ // Stanley smacks you
@@ -330,13 +330,22 @@ const panoramas = {
 			"panorama": "/streetview/images/Mid-NW.jpg",
 			"hotSpots": [
 				{ // Up-NW
-					"yaw": -27,
-					"pitch": 4,
+					"yaw": -23.5,
+					"pitch": 3.5,
 					"type": "scene",
 					
-					"targetYaw": 180,
-					"targetPitch": -10,
+					"targetYaw": 258.5,
+					"targetPitch": 8.5,
 					"sceneId": "Up-NW"
+				},
+				{ // Down-NW
+					"yaw": -3,
+					"pitch": -37,
+					"type": "scene",
+					
+					"targetYaw": 35.5,
+					"targetPitch": -15.5,
+					"sceneId": "Down-NW"
 				}
 			]
 		},
@@ -384,8 +393,8 @@ const panoramas = {
 					"pitch": -35,
 					"type": "scene",
 					
-					"targetYaw": 0,
-					"targetPitch": 0,
+					"targetYaw": 124.5,
+					"targetPitch": 5.5,
 					"sceneId": "Down-SW"
 				}
 			]
@@ -464,7 +473,33 @@ const panoramas = {
 			"type": "equirectangular",
 			"panorama": "/streetview/images/Down-NW.jpg",
 			"hotSpots": [
-				
+				{ // Down-QuadNW
+					"yaw": -57.5,
+					"pitch": -13.5,
+					"type": "scene",
+					
+					"targetYaw": 195.5,
+					"targetPitch": 5.5,
+					"sceneId": "Down-QuadNW"
+				},
+				{ // Down-Foyer
+					"yaw": 130.5,
+					"pitch": 2.5,
+					"type": "scene",
+					
+					"targetYaw": -97,
+					"targetPitch": 0,
+					"sceneId": "Down-Foyer"
+				},
+				{ // Mid-NW
+					"yaw": 214.5,
+					"pitch": 26,
+					"type": "scene",
+					
+					"targetYaw": 183.5,
+					"targetPitch": -3,
+					"sceneId": "Mid-NW"
+				}
 			]
 		},
 		
@@ -506,6 +541,24 @@ const panoramas = {
 			"type": "equirectangular",
 			"panorama": "/streetview/images/Down-SW.jpg",
 			"hotSpots": [
+				{ // Down-QuadSW
+					"yaw": 340,
+					"pitch": -25.5,
+					"type": "scene",
+					
+					"targetYaw": 44,
+					"targetPitch": -13,
+					"sceneId": "Down-QuadSW"
+				},
+				{ // Down-QuadNW
+					"yaw": 348.5,
+					"pitch": -22,
+					"type": "scene",
+					
+					"targetYaw": 64,
+					"targetPitch": -3.5,
+					"sceneId": "Down-QuadNW"
+				},
 				{ // Mid-SW
 					"yaw": -55,
 					"pitch": -4,
@@ -546,6 +599,15 @@ const panoramas = {
 					"targetYaw": -217.5,
 					"targetPitch": 6.5,
 					"sceneId": "Down-QuadCen"
+				},
+				{ // Down-QuadNW
+					"yaw": 176,
+					"pitch": 10,
+					"type": "scene",
+					
+					"targetYaw": -1,
+					"targetPitch": -11.5,
+					"sceneId": "Down-QuadNW"
 				}
 			]
 		},
@@ -554,7 +616,42 @@ const panoramas = {
 			"type": "equirectangular",
 			"panorama": "/streetview/images/Down-QuadNW.jpg",
 			"hotSpots": [
-				
+				{ // Down-QuadNE
+					"yaw": 182.5,
+					"pitch": 8,
+					"type": "scene",
+					
+					"targetYaw": 355.5,
+					"targetPitch": -12.5,
+					"sceneId": "Down-QuadNE"
+				},
+				{ // Down-QuadSW
+					"yaw": 257,
+					"pitch": -4,
+					"type": "scene",
+					
+					"targetYaw": -95.5,
+					"targetPitch": -1.5,
+					"sceneId": "Down-QuadSW"
+				},
+				{ // Down-NW
+					"yaw": 29.5,
+					"pitch": -12.5,
+					"type": "scene",
+					
+					"targetYaw": 125.5,
+					"targetPitch": 8.5,
+					"sceneId": "Down-NW"
+				},
+				{ // Down-SW
+					"yaw": 251.5,
+					"pitch": 2.5,
+					"type": "scene",
+					
+					"targetYaw": 165,
+					"targetPitch": 14,
+					"sceneId": "Down-SW"
+				}
 			]
 		},
 		
@@ -587,7 +684,33 @@ const panoramas = {
 			"type": "equirectangular",
 			"panorama": "/streetview/images/Down-QuadSW.jpg",
 			"hotSpots": [
-				
+				{ // Down-QuadNW
+					"yaw": 78,
+					"pitch": -10,
+					"type": "scene",
+					
+					"targetYaw": 95,
+					"targetPitch": -9.5,
+					"sceneId": "Down-QuadNW"
+				},
+				{ // Down-QuadCen
+					"yaw": 168.5,
+					"pitch": 13,
+					"type": "scene",
+					
+					"targetYaw": -15.5,
+					"targetPitch": -13.5,
+					"sceneId": "Down-QuadCen"
+				},
+				{ // Down-SW
+					"yaw": 237,
+					"pitch": 3.5,
+					"type": "scene",
+					
+					"targetYaw": 130,
+					"targetPitch": 7.5,
+					"sceneId": "Down-SW"
+				}
 			]
 		},
 		
@@ -612,6 +735,15 @@ const panoramas = {
 					"targetYaw": 7,
 					"targetPitch": -10,
 					"sceneId": "Down-QuadSE"
+				},
+				{ // Down-QuadSW
+					"yaw": -191,
+					"pitch": 9,
+					"type": "scene",
+					
+					"targetYaw": -9,
+					"targetPitch": -16.5,
+					"sceneId": "Down-QuadSW"
 				}
 			]
 		},
@@ -620,7 +752,15 @@ const panoramas = {
 			"type": "equirectangular",
 			"panorama": "/streetview/images/Down-Foyer.jpg",
 			"hotSpots": [
-				
+				{ // Down-NW
+					"yaw": 96,
+					"pitch": -6.5,
+					"type": "scene",
+					
+					"targetYaw": -33,
+					"targetPitch": -21.5,
+					"sceneId": "Down-NW"
+				}
 			]
 		}
 	}
