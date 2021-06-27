@@ -3,8 +3,7 @@ const panoramas = {
 		"firstScene": "Up-NE",
 		"sceneFadeDuration": 500,
 		"autoLoad" : true,
-		"preview": "/streetview/loadimage.jpg",
-		"hotSpotDebug": true
+		"preview": "/streetview/loadimage.jpg"
 	},
 
 	"scenes": {

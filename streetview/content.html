@@ -11,10 +11,21 @@
 <a id="mapBtn" href="javascript:void(0);" onclick="hideMap()">Hide Map</a>
 <div id="map" class="mapContainer">
 	<img src="/streetview/map_top.jpg" width="100%"></img>
-	<div class="mapIcons">
+	<div class="mapIcons" id="mapIcons">
 		<svg height="100%" width="100%" viewBox="0 0 250 250">
-			<circle id="MkUp-NE" cx="334" cy="45" r="3" stroke="black" stroke-width="1" fill="grey"></circle>
-			<circle id="MkUp-NCenE"	cx="264" cy="45" r="3" stroke="black" stroke-width="1" fill="grey"></circle>
+			<circle id="MkUp-NE" class="marker markerRed" cx="333" cy="45"/>
+			<circle id="MkUp-NCenE" class="marker" cx="264" cy="45"/>
+			<circle id="MkUp-NCenW" class="marker" cx="161" cy="45"/>
+			<circle id="MkUp-NW" class="marker" cx="101" cy="44"/>
+			
+			<circle id="MkUp-SE" class="marker" cx="334" cy="134"/>
+			<circle id="MkUp-SCen" class="marker" cx="283" cy="134"/>
+			<circle id="MkUp-SW" class="marker" cx="170" cy="131"/>
+			
+			<circle id="MkMid-NE" class="marker" cx="332" cy="15"/>
+			<circle id="MkMid-NW" class="marker" cx="96" cy="29"/>
+			<circle id="MkMid-SE" class="marker" cx="332" cy="158"/>
+			<circle id="MkMid-SW" class="marker" cx="160" cy="115"/>
 		</svg>
 	</div>
 </div>
