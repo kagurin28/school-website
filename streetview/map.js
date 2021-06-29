@@ -23,7 +23,16 @@ function updateMarkers() {
 	const scene = viewer.getScene();
 	const circles = document.getElementById("mapIcons").getElementsByTagName("circle");
 	const redCircle = document.getElementById("Mk" + scene);
-	Array.from(circles).forEach(function (a) {a.classList.remove("markerRed");}); // Remove the markerRed class from all circles
+	Array.from(circles).forEach(function (a) { // Remove the markerRed class from all circles
+		a.classList.remove("markerRed");
+	});
 	redCircle.classList.add("markerRed"); // Add the markerRed class to the red cirle
+	
+	const regExCheckDown = /Down/;
+	if(regExCheckDown.test(scene)) {
+		map.getElementsByTagName("img")[0].src = "/streetview/mapDown.jpg";
+	} else {
+		map.getElementsByTagName("img")[0].src = "/streetview/mapUp.jpg";
+	}
 }
 viewer.on("scenechange", function() {updateMarkers();}); // Don't even ask me why I need to wrap this in an anonymous function
