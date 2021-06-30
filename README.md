@@ -1,16 +1,20 @@
 # Welcome to my school website's github repo!
 This is a school project to make a webiste showing off New Town High School. This is similar to [actualquak](https://github.com/actualquak/School-View)'s and [frlegg](https://github.com/frlegg/School-View)'s websites but more like an actual website than a powerpoint presentation. This website uses **PHP**, the forbidden language (according to some people).
 
-**PLESE NOTE:** As I have not set up a server yet (*which I really, really need to do because I have less that a week left*), you will need to download php and then run the following command:
+**PLESE NOTE:** As I have not set up a server yet (*which I really, really need to do*), you will need to download php and then run the following command:
 ```
-/path/to/php/php.exe -S 127.0.0.1:8000 -t /path/to/folder/school-website
+/path/to/php/php.exe -S 127.0.0.1:80 -t /path/to/folder/school-website
 ```
-and then go to 127.0.0.1:8000 on a web browser to see the website.
+and then go to 127.0.0.1:80 on a web browser to see the website.
 
 ## Features
 * Home page
 * Streetview
+* Map for streetview
 * About pages (in development)
 ### Planned features
-* Map for streetview
-* **GET AN ACTUAL FUCKING SERVER, YOU IDIOT**
+* Improve streetview map
+* Server (See note below)
+
+## Note on server
+I am planning on hosting this website on a Raspberry Pi 3, running Raspbian with Apache. I could do this much easier, **if only the education proxy was not so fucking trash** (think ssh and sftp. Also, **DID I EVER MENTION GIT?**). I am also planning on buying a domain (no, Stanley, I am not going to say which one for obvious reasons).
