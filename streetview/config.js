@@ -3,8 +3,7 @@ const panoramas = {
 		"firstScene": "Up-NE",
 		"sceneFadeDuration": 500,
 		"autoLoad" : true,
-		"preview": "/streetview/loadimage.jpg",
-		"hotSpotDebug": true
+		"preview": "/streetview/loadimage.jpg"
 	},
 
 	"scenes": {
@@ -121,14 +120,14 @@ const panoramas = {
 			"type": "equirectangular",
 			"panorama": "/streetview/images/Up-NW.jpg",
 			"hotSpots": [
-				{ // Up-NCenE
+				{ // Up-NCenW
 					"yaw": 180,
 					"pitch": -10,
 					"type": "scene",
 					
 					"targetYaw": 173,
 					"targetPitch": -10,
-					"sceneId": "Up-NCenE"
+					"sceneId": "Up-NCenW"
 				},
 				{ // Up-Foyer
 					"yaw": 0,
