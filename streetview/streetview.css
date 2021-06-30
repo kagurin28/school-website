@@ -22,6 +22,9 @@
 	stroke-width: 1;
 	fill: grey;
 }
+.marker.markerDown {
+	display: none;
+}
 .marker.markerRed {
 	r: 3;
 	fill: red;
