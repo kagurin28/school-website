@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteRule "^$" "index\.php?page=home"
+RewriteRule "^about$" "index\.php?page=about"
+RewriteRule "^streetview$" "index\.php?page=streetview" [R]

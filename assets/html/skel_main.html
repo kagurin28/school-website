@@ -4,35 +4,28 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/png" href="/icon.png">
-	<link rel="stylesheet" href="/main.css"></link>
-	<?php
-		include($_SESSION["headPath"]);
-	?>
+	<link rel="stylesheet" href="/css/main.css"></link>
+	<?php echo $_SESSION["head"]; ?>
 </head>
 <body>
 	<div class="page">
 		<div class="navbar">
-			<a href="/" class="logo-container">
+			<a class="navItem logo" href="/">
 				<img src="/icon.png" class="logo"></img>
 			</a>
-			<a href="/streetview">Street View</a>
-			<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Bonus Content</a>
+			<a class="navItem" href="/streetview">Street View</a>
+			<a class="navItem" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Bonus Content</a>
 			<div class="dropdown">
-				<div class="dropbtn"> <!-- I have to have a div here because CSS -->
-					<a href="/about">About&#9660;</a>
-				</div>
+				<a class="navItem" href="/about">About&#9660;</a>
 				<div class="dropCnt">
 					<a href="/about#Eshays">Eshays</a>
 					<a href="/about#Classes">Classes</a>
+					<a href="/about#Creators">The Creators</a>
 				</div>
 			</div>
 		</div>
 		<div class="content">
-			<?php
-				include($_SESSION["cntPath"]);
-				session_unset();
-				session_destroy();
-			?>
+			<?php echo $_SESSION["content"]; ?>
 		</div>
 	</div>
 </body>
