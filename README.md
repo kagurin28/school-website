@@ -1,11 +1,7 @@
 # Welcome to my school website's github repo!
 This is a school project to make a webiste showing off New Town High School. This is similar to [actualquak](https://github.com/actualquak/School-View)'s and [frlegg](https://github.com/frlegg/School-View)'s websites but more like an actual website than a powerpoint presentation. This website uses **PHP**, the forbidden language (according to some people).
 
-**PLESE NOTE:** As I have not set up a server yet, you will need to download php and then run the following command:
-```
-/path/to/php/php.exe -S 127.0.0.1:80 -t /path/to/folder/school-website
-```
-and then go to 127.0.0.1:80 on a web browser to see the website.
+I have absolutely no idea how you would run this server btw. However, I did put the apache2 site config file in as serverConf.conf, so you may be able to run it somehow.
 
 ## Features
 * Home page
