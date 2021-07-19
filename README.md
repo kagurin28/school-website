@@ -3,6 +3,8 @@ This is a school project to make a webiste showing off New Town High School. Thi
 
 I have absolutely no idea how you would run this btw. This is simply the server files for the website. However, I did put the apache2 site config file in as serverConf.conf, so you may be able to run it somehow.
 
+The mod_rewrite shit is not working fully right now, so to see the pages, go to (SITE ROOT)/index.php?page=(PAGE).
+
 ## Features
 * Home page
 * Streetview
