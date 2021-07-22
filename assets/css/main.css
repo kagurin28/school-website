@@ -15,62 +15,55 @@ body {
 }
 
 /* NAVBAR SHIT (really need to clean this up)*/
-/* Navbar container */
 .navbar {
-	display: flex;
 	overflow: hidden;
 	background-color: cyan;
-	font-family: Arial;
-	text-align: center;
 }
 
-.navbar a:not(.logo-container, .dropbtn a) {
-	padding: 15px;
-}
-
-/* Links inside the navbar */
-.navbar a:not(.logo-container) {
-	font-size: 16px;
-	text-align: center;
+.navItem {
 	text-decoration: none;
 	color: black;
+	font-size: 24px;
+	padding: 10px 15px;
+	text-align: center;
+	float: left;
+}
+.navItem:hover {
+	background-color: #0CC;
 }
 
-/* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
-	background-color: #00CCCC;
-}
-
-.logo-container {
-	height: 48.4px;
-}
 .logo {
-	padding: 4px;
-	height: 40.4px;
+	padding: 0;
 }
-
-.dropbtn {
-	padding: 15px;
+.logo img { /* Height of the logo image */
+	height: 42px;
 }
-
-/* Dropdown content (hidden by default) */
+.dropdown {
+	float: left;
+}
 .dropCnt {
 	display: none;
-	flex-direction: column;
 	position: absolute;
-	background-color: #f9f9f9;
+
+	background-color: white;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
 }
+.dropCnt a {
+	display: block;
 
-/* Add a grey background color to dropdown links on hover */
+	text-align: left;
+	text-size: 16px;
+	padding: 10px 15px;
+	text-decoration: none;
+	color: black;
+}
 .dropCnt a:hover {
-	background-color: #DDDDDD;
+	background-color: #DDD;
 }
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropCnt {
-	display: flex;
+	display: block;
 }
 /* END NAVBAR SHIT */
 

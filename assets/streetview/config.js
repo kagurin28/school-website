@@ -3,13 +3,13 @@ const panoramas = {
 		"firstScene": "Up-NE",
 		"sceneFadeDuration": 500,
 		"autoLoad" : true,
-		"preview": "/streetview/loadimage.jpg"
+		"preview": "/stimages/loadimage.jpg"
 	},
 
 	"scenes": {
 		"Up-NE": {
 			"type": "equirectangular",
-			"panorama": "/streetview/images/Up-NE.jpg",
+			"panorama": "/stimages/Up-NE.jpg",
 			
 			"yaw": -50,
 			"pitch": -10,
@@ -46,7 +46,7 @@ const panoramas = {
 
 		"Up-NCenE": {
 			"type": "equirectangular",
-			"panorama": "/streetview/images/Up-NCenE.jpg",
+			"panorama": "/stimages/Up-NCenE.jpg",
 			"hotSpots": [
 				{
 					"pitch": -9,
@@ -87,7 +87,7 @@ const panoramas = {
 		
 		"Up-NCenW": {
 			"type": "equirectangular",
-			"panorama": "/streetview/images/Up-NCenW.jpg",
+			"panorama": "/stimages/Up-NCenW.jpg",
 			"hotSpots": [
 				{ // Up-NCenE
 					"yaw": 173,
@@ -118,7 +118,7 @@ const panoramas = {
 		
 		"Up-NW": {
 			"type": "equirectangular",
-			"panorama": "/streetview/images/Up-NW.jpg",
+			"panorama": "/stimages/Up-NW.jpg",
 			"hotSpots": [
 				{ // Up-NCenW
 					"yaw": 180,
@@ -152,7 +152,7 @@ const panoramas = {
 		
 		"Up-SE": {
 			"type": "equirectangular",
-			"panorama": "/streetview/images/Up-SE.jpg",
+			"panorama": "/stimages/Up-SE.jpg",
 			"hotSpots": [
 				{ // Up-NE
 					"yaw": 50,
@@ -193,7 +193,7 @@ const panoramas = {
 		
 		"Up-SCen": {
 			"type": "equirectangular",
-			"panorama": "/streetview/images/Up-SCen.jpg",
+			"panorama": "/stimages/Up-SCen.jpg",
 			"hotSpots": [
 				{ // Up-SE
 					"yaw": -104,
@@ -218,7 +218,7 @@ const panoramas = {
 		
 		"Up-SW": {
 			"type": "equirectangular",
-			"panorama": "/streetview/images/Up-SW.jpg",
+			"panorama": "/stimages/Up-SW.jpg",
 			"hotSpots": [
 				{ // Up-SCen
 					"yaw": 75.25,
@@ -256,7 +256,7 @@ const panoramas = {
 		
 		"Up-Classroom": {
 			"type": "equirectangular",
-			"panorama": "/streetview/images/Up-Classroom.jpg",
+			"panorama": "/stimages/Up-Classroom.jpg",
 			"hotSpots": [
 				{ // Up-NCenE
 					"pitch": 5,
@@ -272,7 +272,7 @@ const panoramas = {
 		
 		"Up-Foyer": {
 			"type": "equirectangular",
-			"panorama": "/streetview/images/Up-Foyer.jpg",
+			"panorama": "/stimages/Up-Foyer.jpg",
 			"hotSpots": [
 				{ // Up-NW
 					"yaw": 137,
@@ -295,7 +295,7 @@ const panoramas = {
 		
 		"Mid-NE": {
 			"type": "equirectangular",
-			"panorama": "/streetview/images/Mid-NE.jpg",
+			"panorama": "/stimages/Mid-NE.jpg",
 			"hotSpots": [
 				{ // Up-NE
 					"yaw": -58,
@@ -326,7 +326,7 @@ const panoramas = {
 		
 		"Mid-NW": {
 			"type": "equirectangular",
-			"panorama": "/streetview/images/Mid-NW.jpg",
+			"panorama": "/stimages/Mid-NW.jpg",
 			"hotSpots": [
 				{ // Up-NW
 					"yaw": -23.5,
@@ -351,7 +351,7 @@ const panoramas = {
 		
 		"Mid-SE": {
 			"type": "equirectangular",
-			"panorama": "/streetview/images/Mid-SE.jpg",
+			"panorama": "/stimages/Mid-SE.jpg",
 			"hotSpots": [
 				{ // Up-SE
 					"yaw": -7,
@@ -376,7 +376,7 @@ const panoramas = {
 		
 		"Mid-SW": {
 			"type": "equirectangular",
-			"panorama": "/streetview/images/Mid-SW.jpg",
+			"panorama": "/stimages/Mid-SW.jpg",
 			"hotSpots": [
 				{ // Up-SW
 					"yaw": -40,
@@ -402,7 +402,7 @@ const panoramas = {
 		
 		"Down-NE": {
 			"type": "equirectangular",
-			"panorama": "/streetview/images/Down-NE.jpg",
+			"panorama": "/stimages/Down-NE.jpg",
 			"hotSpots": [
 				{ // Down-CenE
 					"yaw": 124.5,
@@ -427,7 +427,7 @@ const panoramas = {
 		
 		"Down-CenE": {
 			"type": "equirectangular",
-			"panorama": "/streetview/images/Down-CenE.jpg",
+			"panorama": "/stimages/Down-CenE.jpg",
 			"hotSpots": [
 				{ // Down-NE
 					"yaw": 294,
@@ -470,7 +470,7 @@ const panoramas = {
 		
 		"Down-NW": {
 			"type": "equirectangular",
-			"panorama": "/streetview/images/Down-NW.jpg",
+			"panorama": "/stimages/Down-NW.jpg",
 			"hotSpots": [
 				{ // Down-QuadNW
 					"yaw": -57.5,
@@ -504,7 +504,7 @@ const panoramas = {
 		
 		"Down-SE": {
 			"type": "equirectangular",
-			"panorama": "/streetview/images/Down-SE.jpg",
+			"panorama": "/stimages/Down-SE.jpg",
 			"hotSpots": [
 				{ // Down-CenE
 					"yaw": 303,
@@ -538,7 +538,7 @@ const panoramas = {
 		
 		"Down-SW": {
 			"type": "equirectangular",
-			"panorama": "/streetview/images/Down-SW.jpg",
+			"panorama": "/stimages/Down-SW.jpg",
 			"hotSpots": [
 				{ // Down-QuadSW
 					"yaw": 340,
@@ -579,7 +579,7 @@ const panoramas = {
 		
 		"Down-QuadNE": {
 			"type": "equirectangular",
-			"panorama": "/streetview/images/Down-QuadNE.jpg",
+			"panorama": "/stimages/Down-QuadNE.jpg",
 			"hotSpots": [
 				{ // Down-CenE
 					"yaw": -16,
@@ -613,7 +613,7 @@ const panoramas = {
 		
 		"Down-QuadNW": {
 			"type": "equirectangular",
-			"panorama": "/streetview/images/Down-QuadNW.jpg",
+			"panorama": "/stimages/Down-QuadNW.jpg",
 			"hotSpots": [
 				{ // Down-QuadNE
 					"yaw": 182.5,
@@ -656,7 +656,7 @@ const panoramas = {
 		
 		"Down-QuadSE": {
 			"type": "equirectangular",
-			"panorama": "/streetview/images/Down-QuadSE.jpg",
+			"panorama": "/stimages/Down-QuadSE.jpg",
 			"hotSpots": [
 				{ // Down-SE
 					"yaw": 6,
@@ -681,7 +681,7 @@ const panoramas = {
 		
 		"Down-QuadSW": {
 			"type": "equirectangular",
-			"panorama": "/streetview/images/Down-QuadSW.jpg",
+			"panorama": "/stimages/Down-QuadSW.jpg",
 			"hotSpots": [
 				{ // Down-QuadNW
 					"yaw": 78,
@@ -715,7 +715,7 @@ const panoramas = {
 		
 		"Down-QuadCen": {
 			"type": "equirectangular",
-			"panorama": "/streetview/images/Down-QuadCen.jpg",
+			"panorama": "/stimages/Down-QuadCen.jpg",
 			"hotSpots": [
 				{ // Down-QuadNE
 					"yaw": -30,
@@ -749,7 +749,7 @@ const panoramas = {
 		
 		"Down-Foyer": {
 			"type": "equirectangular",
-			"panorama": "/streetview/images/Down-Foyer.jpg",
+			"panorama": "/stimages/Down-Foyer.jpg",
 			"hotSpots": [
 				{ // Down-NW
 					"yaw": 96,

@@ -43,7 +43,7 @@ function updateMarkers() {
 	redCircle.classList.add("markerRed"); // Add the markerRed class to the red cirle
 	
 	if(regExCheckUp.test(scene)) { // Change the actual map and show + hide icons
-		mapImg.src = "/streetview/mapUp.jpg";
+		mapImg.src = "/stimages/mapUp.jpg";
 		
 		circlesUp.forEach(function(a) {
 			a.style.display = "block";
@@ -52,7 +52,7 @@ function updateMarkers() {
 			a.style.display = "none";
 		});
 	} else if(regExCheckDown.test(scene)) {
-		mapImg.src = "/streetview/mapDown.jpg";
+		mapImg.src = "/stimages/mapDown.jpg";
 		
 		circlesDown.forEach(function(a) {
 			a.style.display = "block";

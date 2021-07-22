@@ -2,7 +2,7 @@
 <script>
 	var viewer;
 </script>
-<script src="/streetview/config.js"></script>
+<script><?=$_SESSION["scptConfig"]?></script>
 <script>
 	viewer = pannellum.viewer("panorama", panoramas);
 </script>
@@ -10,7 +10,7 @@
 
 <a id="mapBtn" href="javascript:void(0);" onclick="hideMap()">Hide Map</a>
 <div id="map" class="mapContainer">
-	<img src="/streetview/mapUp.jpg" width="100%"></img>
+	<img src="/stimages/mapUp.jpg" width="100%"></img>
 	<div class="mapIcons" id="mapIcons">
 		<svg height="100%" width="100%" viewBox="0 0 250 250">
 			<circle id="MkUp-NE" class="marker markerRed" cx="320" cy="58"/>
@@ -45,4 +45,5 @@
 		</svg>
 	</div>
 </div>
-<script src="/streetview/map.js"></script>
+<script><?=$_SESSION["scptMap"]?></script>
+<?=$_SESSION["browserMsg"]?>
