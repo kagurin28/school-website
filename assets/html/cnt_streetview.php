@@ -46,6 +46,4 @@
 	</div>
 </div>
 <script><?=$_SESSION["scptMap"]?></script>
-<p>
-	PLEASE NOTE: If you are on Firefox, then the map icons will be broken for some unknown reason. Well you shouldn't even be on firefox anyway, as I've noticed it has all sorts of weird inconsistencies compared to other browsers. Just use Chrome, you donkey.
-</p>
+<?=$_SESSION["browserMsg"]?>
