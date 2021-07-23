@@ -9,6 +9,8 @@ $cntDir = $assetsDir . "html/cnt_";
 $cssDir = $assetsDir . "css/";
 
 $_SESSION["cssMain"] = file_get_contents($cssDir . "main.css"); // Sets the main css file
+$_SESSION["darkmodeSvg"] = file_get_contents($assetsDir . "darkmode.svg"); // The darkmode svg file
+$_SESSION["jquery"] = file_get_contents($assetsDir . "jquery-3.6.0.min.js"); // The magical library of Jquery
 
 switch ($_GET["page"]) { // Essentially picks which site you wanted to load and sets variables appropriatly
 	case "home":

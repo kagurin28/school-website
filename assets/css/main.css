@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	background-color: #eeeeee;
+	background-color: #EEE;
 }
 
 * {
@@ -8,16 +8,17 @@ body {
 }
 
 .page {
-	max-width: 60em;
+	max-width: 70em;
 	margin: 0 auto;
 	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-	background-color: #ffffff;
+	background-color: #FFF;
 }
 
-/* NAVBAR SHIT (really need to clean this up)*/
+/* NAVBAR SHIT */
 .navbar {
-	overflow: hidden;
 	background-color: cyan;
+	display: inline-block;
+	width: 100%;
 }
 
 .navItem {
@@ -33,18 +34,22 @@ body {
 }
 
 .logo {
-	padding: 0;
+	padding: 3px;
 }
 .logo img { /* Height of the logo image */
-	height: 42px;
+	height: 36px;
+	padding: 0px;
 }
 .dropdown {
+	position: relative;
 	float: left;
 }
 .dropCnt {
 	display: none;
 	position: absolute;
+	top: 100%;
 
+	min-width: 200px;
 	background-color: white;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
@@ -53,7 +58,7 @@ body {
 	display: block;
 
 	text-align: left;
-	text-size: 16px;
+	font-size: 16px;
 	padding: 10px 15px;
 	text-decoration: none;
 	color: black;
@@ -64,6 +69,20 @@ body {
 
 .dropdown:hover .dropCnt {
 	display: block;
+}
+
+.darkmode { /* Darkmode button container */
+	float: right;
+	padding: 4px;
+}
+.darkmode svg {
+	height: 36px;
+}
+.darkmode #darkmodeFill { /* Darkmode normal */
+	fill: cyan;
+}
+.darkmode svg:hover #darkmodeFill { /* Darkmode hover */
+	fill: #0CC;
 }
 /* END NAVBAR SHIT */
 
