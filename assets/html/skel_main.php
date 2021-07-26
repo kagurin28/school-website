@@ -5,25 +5,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style><?=$_SESSION["cssMain"]?></style> <!-- The main css file -->
 	<script><?=$_SESSION["jquery"]?></script> <!-- HOLY JQUERY -->
-	<?php include($_SESSION["head"]); ?> <!-- It must include() this as it may have PHP -->
-	<!-- Also, if you are looking at these comments in browser inspect and have no idea what they mean, they're intended for people looking at the actual files so yea :/ -->
+	<?php include($_SESSION["head"]); ?>
 	<script>
-		function randRickRoll() { // Randomises the "Bonus Content" link
-			var r = Math.floor(Math.random() * 3);
-			switch (r) {
-				case 0: // The og rickroll
-					window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank");
-					break;
-				
-				case 1: // Gnomed
-					window.open("https://www.youtube.com/watch?v=6n3pFFPSlW4", "_blank");
-					break;
-				
-				case 2: // Stickbugged
-					window.open("https://www.youtube.com/watch?v=fC7oUOUEEi4", "_blank");
-					break;
-			}
+		function rickroll() {
+			$.ajax({
+				url: "/index.php?action=function&function=rickroll",
+				success: function(data) {
+					window.open(data, "_blank");
+				}
+			});
 		}
+		// Well done, random person looking in the browser inspect! You have now learned how to get the server to send youtube links to you!
 	</script>
 </head>
 <body>
@@ -33,7 +25,7 @@
 				<img src="/favicon.ico" class="logo"></img>
 			</a>
 			<a class="navItem" href="/streetview">Street View</a>
-			<a class="navItem" href="javascript:void(0);" onclick="randRickRoll()">Bonus Content</a>
+			<a class="navItem" href="javascript:void(0);" onclick="rickroll()">Bonus Content</a>
 			<div class="dropdown">
 				<a class="navItem dropBtn" href="/about">About&#9660;</a>
 				<div class="dropCnt">
@@ -50,7 +42,7 @@
 			</div>
 		</div>
 		<div class="content">
-			<?php include($_SESSION["content"]); ?> <!-- Likewise with this one -->
+			<?php include($_SESSION["content"]); ?>
 		</div>
 	</div>
 </body>
