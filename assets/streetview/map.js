@@ -39,8 +39,10 @@ function updateMarkers() {
 	const redCircle = document.getElementById("Mk" + scene);
 	circles.forEach(function(a) { // Remove the markerRed class from all circles
 		a.classList.remove("markerRed");
+		a.setAttribute("r", 2); // Css can't change the r attribute in Firefox, so you have to do it in Javascript
 	});
 	redCircle.classList.add("markerRed"); // Add the markerRed class to the red cirle
+	redCircle.setAttribute("r", 3);
 	
 	if(regExCheckUp.test(scene)) { // Change the actual map and show + hide icons
 		mapImg.src = "/stimages/mapUp.jpg";

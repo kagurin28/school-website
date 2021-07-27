@@ -11,7 +11,7 @@
 .mapIcons {
 	width: 100%;
 	height: 100%;
-	z-index: 999;
+	z-index: 1;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -25,12 +25,10 @@
 .marker.markerDown {
 	display: none;
 }
-.marker.markerRed {
-	r: 3;
+.marker.markerRed { /* In Firefox, Css can't change the r tag of circles, which is why it wasn't working, so I have to change it in javascript */
 	fill: red;
 }
 .marker:not(.markerRed) {
-	r: 2;
 	fill: grey;
 }
 

@@ -75,9 +75,6 @@ body {
 	float: right;
 	padding: 4px;
 }
-.darkmode svg {
-	height: 36px;
-}
 .darkmode #darkmodeFill { /* Darkmode normal */
 	fill: cyan;
 }
