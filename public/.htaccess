@@ -6,3 +6,9 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-l
 RewriteRule ^([^/]+)/?$ /index.php?action=site&page=$1 [QSA]
 RewriteRule ^$ /index.php?action=site&page=home [QSA]
+
+ErrorDocument 400 /index.php?action=site&page=400
+ErrorDocument 401 /index.php?action=site&page=401
+ErrorDocument 403 /index.php?action=site&page=403
+ErrorDocument 404 /index.php?action=site&page=404
+ErrorDocument 500 /index.php?action=site&page=500

@@ -1,11 +1,9 @@
 <?php
 
 /* 
-
 This script will send back a link to a random youtube video. It is normally
 prompted with the "Bonus Content" link on the front end. The database that
 stores these links is BonusContent.
-
 */
 
 $mysqli = new mysqli("localhost", "root", "kazooky", "nths");
