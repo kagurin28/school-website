@@ -7,9 +7,10 @@
 	<a id="Eshays"></a>
 	<h2>Eshays</h2>
 	<p>
-		When you are at New Town High, you are going to see many Eshays. They often have mullets and are tough-looking. Eshays are known to wander around the school, even when they are ment to be in class. They occasionally hand out gum between themselves (gum is a banned item). As such, it is also common to find about 5 pieces of gum underneath any table or desk.<br>
-		<br>
-		Let me say though, with these guys around, you are in for a <i>wild</i> ride at New Town High. The sheer amount of things eshays have done just to make school life more interesting for everyone else is amazing. Truly an amazing group of people.
+		When you are at New Town High, you are going to see many Eshays. They often have mullets and are tough-looking. Eshays are known to wander around the school, even when they are ment to be in class. They occasionally hand out gum between themselves (gum is a banned item). As such, it is also common to find about 5 pieces of gum underneath any table or desk.
+	</p>
+	<p>
+		Let me say though, with these guys around, you are in for a <i>wild</i> ride at New Town High. The sheer amount of things eshays have done just to make school life more interesting for everyone else is amazing. Truly an wonderful group of people.
 	</p>
 </div>
 
@@ -29,7 +30,7 @@
 	<div class="miniPara">
 		<h3>Japanese/French</h3>
 		<p>
-			The two language choices at New Town High are Japanese and French. Japanese is good if you're a weeb (obviously).  French is not really done by anyone except eshays and giga-nerds (don't even ask me why so many eshays go).<br>
+			The two language choices at New Town High are Japanese and French. Japanese is good if you're a weeb (obviously).  French is not really done by anyone tbh.<br>
 			(Also, I think they offer trips to Tokoyo and Paris in Year 9/10, so that's pretty cool.)
 		</p>
 	</div>
@@ -56,15 +57,24 @@
 	<div class="miniPara">
 		<h3>Drama</h3>
 		<p>
-			ffffffff
+			I don't know much about this subject (and I've always hated acting), other than the teacher is basically a NTHS veteran.
 		</p>
-	</div
+	</div>
 </div>
 
 <div class="paragraph">
 	<a id="Creators"></a>
 	<h2>The Creators of this website</h2>
 	<p>
-		This website was made by <a href="https://github.com/epikgamer696969">epikgamer696969</a> on Github (<a href="https://github.com/epikgamer696969/school-website">Check out the repository!</a>). The streetview photos were taken by <a href="https://github.com/actualquak">actualquak</a> (<a href="https://github.com/actualquak/School-View">Check out their repository!</a>).
+		This website was basically made to be a school project of a website centered around a streetview tour of the school. I worked heavily with <a href="https://github.com/actualquak">actualquak</a> (who took the streetview images) and <a href="https://github.com/frlegg">frlegg</a> to make this website.
+	</p>
+	<p>
+		They have also made their own repository, that uses Ruby on Rails. <a href="https://github.com/actualquak/Ruby-School-Website">Link...</a><br>
+	</p>
+	<p>
+		My friend (who doesn't have a github account) is currently in the process of making videos for these websites.
+	</p>
+	<p>
+		Maybe the true website was the friends we made along the way...
 	</p>
 </div>
