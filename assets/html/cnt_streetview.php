@@ -15,5 +15,6 @@
 		<?=$_SESSION["mapIcons"]?>
 	</div>
 </div>
+<p id="floorDisplay">Current Floor: Up</p>
+<button id="changeFloorBtn" onclick="switchFloorDown()">Change Floor</button>
 <script><?=$_SESSION["scptMap"]?></script>
-<?=$_SESSION["browserMsg"]?>

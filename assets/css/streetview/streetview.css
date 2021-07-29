@@ -28,8 +28,34 @@
 .marker.markerRed { /* In Firefox, Css can't change the r tag of circles, which is why it wasn't working, so I have to change it in javascript */
 	fill: red;
 }
-.marker:not(.markerRed) {
+.marker.markerGrey {
 	fill: grey;
+}
+
+.marker.markerGrey.markerHover {
+	fill: #B0B0B0
+}
+
+#changeFloorBtn {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+	font-size: 20px;
+	padding: 5px 10px;
+	border-style: solid;
+	background-color: #EEE;
+}
+
+#changeFloorBtn:hover {
+	background-color: #BBB;
+}
+
+#floorDisplay {
+	font-weight: bold;
+	font-size: 30px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 .pnlm-load-box {
