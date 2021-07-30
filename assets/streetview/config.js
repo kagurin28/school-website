@@ -3,7 +3,8 @@ const panoramas = {
 		"firstScene": "Up-NE",
 		"sceneFadeDuration": 500,
 		"autoLoad" : true,
-		"preview": "/stimages/loadimage.jpg"
+		"preview": "/stimages/loadimage.jpg",
+		"hotSpotDebug": true
 	},
 
 	"scenes": {
@@ -48,7 +49,7 @@ const panoramas = {
 			"type": "equirectangular",
 			"panorama": "/stimages/Up-NCenE.jpg",
 			"hotSpots": [
-				{
+				{ // Up-NE
 					"pitch": -9,
 					"yaw": 177,
 					"type": "scene",
@@ -66,15 +67,15 @@ const panoramas = {
 					"targetPitch": -4,
 					"sceneId": "Up-NCenW"
 				},
-				{ // Classroom
+				{ // Up-DTClass1
 					"pitch": -20,
 					"yaw": -95,
 					"type": "scene",
 					"text": "Probably the best computer lab in the school, 16GB ram in each computer (also where this website was coded)",
 					
-					"targetYaw": 0,
-					"targetPitch": -10,
-					"sceneId": "Up-Classroom"
+					"targetYaw": -69,
+					"targetPitch": -14,
+					"sceneId": "Up-DTClass1"
 				},
 				{
 					"pitch": -12,
@@ -112,6 +113,16 @@ const panoramas = {
 					"pitch": -10,
 					"type": "info",
 					"text": "The school library (very noice)"
+				},
+				{ // Up-Science
+					"yaw": -182.5,
+					"pitch": -5,
+					"type": "scene",
+					"text": "A tiny, sliver of a door is visble here...",
+
+					"targetYaw": 92,
+					"targetPitch": -4,
+					"sceneId": "Up-Science"
 				}
 			]
 		},
@@ -212,7 +223,16 @@ const panoramas = {
 					"targetYaw": -105,
 					"targetPitch": 0,
 					"sceneId": "Up-SW"
-				}
+				},
+				{ // Up-DTClass2
+					"yaw": 17,
+					"pitch": -18,
+					"type": "scene",
+					
+					"targetYaw": 74.5,
+					"targetPitch": -5,
+					"sceneId": "Up-DTClass2"
+				},
 			]
 		},
 		
@@ -254,18 +274,50 @@ const panoramas = {
 			]
 		},
 		
-		"Up-Classroom": {
+		"Up-DTClass1": {
 			"type": "equirectangular",
-			"panorama": "/stimages/Up-Classroom.jpg",
+			"panorama": "/stimages/Up-DTClass1.jpg",
 			"hotSpots": [
 				{ // Up-NCenE
 					"pitch": 5,
 					"yaw": 147,
 					"type": "scene",
 					
-					"targetYaw": 0,
-					"targetPitch": 0,
+					"targetYaw": 102.5,
+					"targetPitch": -12.5,
 					"sceneId": "Up-NCenE"
+				}
+			]
+		},
+
+		"Up-DTClass2": {
+			"type": "equirectangular",
+			"panorama": "/stimages/Up-DTClass2.jpg",
+			"hotSpots": [
+				{ // Up-SCen
+					"yaw": -98,
+					"pitch": -13.5,
+					"type": "scene",
+					
+					"targetYaw": -181.5,
+					"targetPitch": -15.5,
+					"sceneId": "Up-SCen"
+				},
+			]
+		},
+
+		"Up-Science": {
+			"type": "equirectangular",
+			"panorama": "/stimages/Up-Science.jpg",
+			"hotSpots": [
+				{ // Up-NCenW
+					"yaw": 309.5,
+					"pitch": 4.5,
+					"type": "scene",
+					
+					"targetYaw": -8,
+					"targetPitch": -4,
+					"sceneId": "Up-NCenW"
 				}
 			]
 		},
@@ -283,11 +335,37 @@ const panoramas = {
 					"targetPitch": -10,
 					"sceneId": "Up-NW"
 				},
-				{ // Art class info
-					"yaw": -47,
-					"pitch": 0,
+				{ // Up-Art
+					"yaw": -45.5,
+					"pitch": -2.5,
+					"type": "scene",
+					"text": "This way to the art classrooms, as well as a good computer lab that is split over 2 rooms, making it easy to hide whatever you're doing",
+					
+					"targetYaw": -98.5,
+					"targetPitch": -2.5,
+					"sceneId": "Up-Art"
+				}
+			]
+		},
+
+		"Up-Art": {
+			"type": "equirectangular",
+			"panorama": "/stimages/Up-Art.jpg",
+			"hotSpots": [
+				{ // Up-Foyer
+					"yaw": 85.5,
+					"pitch": -5.5,
+					"type": "scene",
+					
+					"targetYaw": 136.5,
+					"targetPitch": -10,
+					"sceneId": "Up-Foyer"
+				},
+				{ // My boy Mike Wazowski
+					"yaw": -95.5,
+					"pitch": 3.5,
 					"type": "info",
-					"text": "This way to the art classrooms, as well as a good computer lab that is split over 2 rooms, making it easy to hide whatever you're doing"
+					"text": "My boy Mike Wazowski"
 				}
 			]
 		},
@@ -759,9 +837,34 @@ const panoramas = {
 					"targetYaw": -33,
 					"targetPitch": -21.5,
 					"sceneId": "Down-NW"
+				},
+				{ // Down-HallN
+					"yaw": 170,
+					"pitch": 9,
+					"type": "scene",
+					
+					"targetYaw": 169.5,
+					"targetPitch": 10.5,
+					"sceneId": "Down-HallN"
 				}
 			]
-		}
+		},
+
+		"Down-HallN": {
+			"type": "equirectangular",
+			"panorama": "/stimages/Down-HallN.jpg",
+			"hotSpots": [
+				{ // Down-Foyer
+					"yaw": -12.5,
+					"pitch": -31,
+					"type": "scene",
+					
+					"targetYaw": -3.5,
+					"targetPitch": -25.5,
+					"sceneId": "Down-Foyer"
+				}
+			]
+		},
 	}
 };
 // Yes this is a very crappy way to do JSON but I've put

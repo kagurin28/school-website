@@ -25,12 +25,34 @@
 		<a href="javascript:void(0);" onclick="viewer.loadScene('Up-SW')">
 			<circle id="MkUp-SW" class="marker markerGrey" cx="170" cy="138" r="2" onmouseover="circleHover(this)" onmouseout="circleUnhover(this)"/>
 		</a>
-		<a href="javascript:void(0);" onclick="viewer.loadScene('Up-Classroom')">
-			<circle id="MkUp-Classroom" class="marker markerGrey" cx="238" cy="72" r="2" onmouseover="circleHover(this)" onmouseout="circleUnhover(this)"/>
+		<a href="javascript:void(0);" onclick="viewer.loadScene('Up-DTClass1')">
+			<circle id="MkUp-DTClass1" class="marker markerGrey" cx="238" cy="72" r="2" onmouseover="circleHover(this)" onmouseout="circleUnhover(this)"/>
+		</a>
+		<a href="javascript:void(0);" onclick="viewer.loadScene('Up-DTClass2')">
+			<circle id="MkUp-DTClass2" class="marker markerGrey" cx="272" cy="158" r="2" onmouseover="circleHover(this)" onmouseout="circleUnhover(this)"/>
+		</a>
+		<a href="javascript:void(0);" onclick="viewer.loadScene('Up-Science')">
+			<circle id="MkUp-Science" class="marker markerGrey" cx="182" cy="82" r="2" onmouseover="circleHover(this)" onmouseout="circleUnhover(this)"/>
 		</a>
 		<a href="javascript:void(0);" onclick="viewer.loadScene('Up-Foyer')">
 			<circle id="MkUp-Foyer" class="marker markerGrey" cx="71" cy="58" r="2" onmouseover="circleHover(this)" onmouseout="circleUnhover(this)"/>
 		</a>
+		<a href="javascript:void(0);" onclick="viewer.loadScene('Up-Art')">
+			<circle id="MkUp-Art" class="marker markerGrey" cx="23" cy="58" r="2" onmouseover="circleHover(this)" onmouseout="circleUnhover(this)"/>
+		</a>
+
+        <a href="javascript:void(0);" onclick="viewer.loadScene('Mid-NE')">
+			<circle id="MkMid-NE" class="marker markerGrey" cx="319" cy="31" r="2" onmouseover="circleHover(this)" onmouseout="circleUnhover(this)"/>
+		</a>
+		<a href="javascript:void(0);" onclick="viewer.loadScene('Mid-NW')">
+			<circle id="MkMid-NW" class="marker markerGrey" cx="98" cy="42" r="2" onmouseover="circleHover(this)" onmouseout="circleUnhover(this)"/>
+		</a>
+		<a href="javascript:void(0);" onclick="viewer.loadScene('Mid-SE')">
+			<circle id="MkMid-SE" class="marker markerGrey" cx="319" cy="165" r="2" onmouseover="circleHover(this)" onmouseout="circleUnhover(this)"/>
+		</a>
+		<a href="javascript:void(0);" onclick="viewer.loadScene('Mid-SW')">
+			<circle id="MkMid-SW" class="marker markerGrey" cx="158" cy="124" r="2" onmouseover="circleHover(this)" onmouseout="circleUnhover(this)"/>
+		</a>		
         
         <a href="javascript:void(0);" onclick="viewer.loadScene('Down-NE')">
 			<circle id="MkDown-NE" class="marker markerDown" cx="317" cy="53" r="2" onmouseover="circleHover(this)" onmouseout="circleUnhover(this)"/>
@@ -47,10 +69,7 @@
 		<a href="javascript:void(0);" onclick="viewer.loadScene('Down-SW')">
 			<circle id="MkDown-SW" class="marker markerDown" cx="173" cy="133" r="2" onmouseover="circleHover(this)" onmouseout="circleUnhover(this)"/>
 		</a>
-		<a href="javascript:void(0);" onclick="viewer.loadScene('Down-Foyer')">
-			<circle id="MkDown-Foyer" class="marker markerDown" cx="71" cy="55" r="2" onmouseover="circleHover(this)" onmouseout="circleUnhover(this)"/>
-		</a>
-        
+
 		<a href="javascript:void(0);" onclick="viewer.loadScene('Down-QuadNE')">
 			<circle id="MkDown-QuadNE" class="marker markerDown" cx="297" cy="78" r="2" onmouseover="circleHover(this)" onmouseout="circleUnhover(this)"/>
 		</a>
@@ -66,18 +85,12 @@
 		<a href="javascript:void(0);" onclick="viewer.loadScene('Down-QuadCen')">
 			<circle id="MkDown-QuadCen" class="marker markerDown" cx="233" cy="100" r="2" onmouseover="circleHover(this)" onmouseout="circleUnhover(this)"/>
 		</a>
-        
-        <a href="javascript:void(0);" onclick="viewer.loadScene('Mid-NE')">
-			<circle id="MkMid-NE" class="marker markerGrey" cx="319" cy="31" r="2" onmouseover="circleHover(this)" onmouseout="circleUnhover(this)"/>
+
+		<a href="javascript:void(0);" onclick="viewer.loadScene('Down-Foyer')">
+			<circle id="MkDown-Foyer" class="marker markerDown" cx="71" cy="55" r="2" onmouseover="circleHover(this)" onmouseout="circleUnhover(this)"/>
 		</a>
-		<a href="javascript:void(0);" onclick="viewer.loadScene('Mid-NW')">
-			<circle id="MkMid-NW" class="marker markerGrey" cx="98" cy="42" r="2" onmouseover="circleHover(this)" onmouseout="circleUnhover(this)"/>
-		</a>
-		<a href="javascript:void(0);" onclick="viewer.loadScene('Mid-SE')">
-			<circle id="MkMid-SE" class="marker markerGrey" cx="319" cy="165" r="2" onmouseover="circleHover(this)" onmouseout="circleUnhover(this)"/>
-		</a>
-		<a href="javascript:void(0);" onclick="viewer.loadScene('Mid-SW')">
-			<circle id="MkMid-SW" class="marker markerGrey" cx="158" cy="124" r="2" onmouseover="circleHover(this)" onmouseout="circleUnhover(this)"/>
+		<a href="javascript:void(0);" onclick="viewer.loadScene('Down-HallN')">
+			<circle id="MkDown-HallN" class="marker markerDown" cx="71" cy="72" r="2" onmouseover="circleHover(this)" onmouseout="circleUnhover(this)"/>
 		</a>
     </g>
 </svg>
